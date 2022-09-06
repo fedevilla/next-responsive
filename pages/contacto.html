@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/images/favico.png">
+    <title>Next Hability - Contactanos! </title>
+</head>
+
+<body>
+    <!--inicio header-->
+    <header class="header_fixed">
+        <nav class="nav-fixed">
+            <ul style="padding-top: 20px; padding-bottom: 20px;">
+                <li class="menu_option"><a class="menu_links" href="../index.html">Home</a></li>
+                <li class="menu_option"><a class="menu_links" href="./cursos.html">Cursos</a></li>
+                <li class="menu_option"><a class="menu_links" href="./history.html">Testimonios</a></li>
+                <li class="menu_option"><a class="menu_links" href="./pricing.html">Club NexT</a></li>
+                <li class="menu_option"><a class="menu_links" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--inicio mainr-->
+    <main>
+        <section>
+            <div class="container_main_title">
+                <img class="img_back back_black" src="../assets/images/pexels-laura-tancredi-7078666 (1).jpg"
+                    alt="fonto_contacto">
+
+                <div class="container_title">
+                    <div class="main_title_center">
+                        <h1 class="h1_container_main_title">Contactanos!</h1>
+                        <form action="">
+                            <div class="field_data">
+                                <input type="text" id="nombre" placeholder="tu nombre...">
+                            </div>
+                            <div class="field_data">
+                                <input type="text" id="apellido" placeholder="tu apellido...">
+                            </div>
+                            <div>
+                                <div class="field_data">
+                                    <input type="text" id="mail" placeholder="hola@mexthability.com.ar">
+                                </div>
+                                <div class="field_data">
+                                    <input type="text" id="celular" placeholder="tu telefono">
+                                </div>
+                            </div>
+                            <div>
+                                <textarea name="" id="consulta" cols="30" rows="10"
+                                    placeholder="Envianos tu mensaje!"></textarea>
+                            </div>
+                            <div class="botonera">
+                                <button type="reset" class="btn_limpiar">Limpiar!</button>
+                                <button type="submit" class="btn_enviar">Enviar! </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--inicio header-->
+    <footer>
+        <div class="container_footer footer_fixed">
+            <div class="container_footer_data">
+                <div class="container-footer-redes">
+                    <div class="titulo_container_footer_redes">
+                        Redes sociales
+                    </div>
+                    <hr>
+                    <ul class="menu_footer_container_footer">
+                        <li class="menu_links"><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        <li class="menu_links"><i class="fa-brands fa-youtube"></i> Youtube</li>
+                        <li class="menu_links"><i class="fa-brands fa-twitter"></i> Twitter</li>
+                        <li class="menu_links"><i class="fa-brands fa-facebook-f"></i> Facebook</li>
+
+                    </ul>
+                </div>
+                <div class="container-footer-redes">
+                    <div class="titulo_container_footer_redes">
+                        Contacto
+                    </div>
+                    <hr>
+                    <ul class="menu_footer_container_footer_datos">
+                        <li class="menu_links"><i class="fa-solid fa-map"></i> Av. Siempre verde 5152</li>
+                        <li class="menu_links"><i class="fa-solid fa-envelope"></i> hola@nexthability.com</li>
+                        <li class="menu_links"><i class="fa-solid fa-phone"></i> 11.5474.4474 </li>
+                        <li class="menu_links"> Work with us!</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    const navbar = document.querySelector('.nav-fixed');
+    const header = document.querySelector('.header_fixed');
+    const links = document.querySelector('.menu_links');
+    window.onscroll = () => {
+        if (window.scrollY > 800) {
+            navbar.classList.add('nav-active');
+            header.classList.add('header-active');
+            links.classList.add('links-active');
+        } else {
+            navbar.classList.remove('nav-active');
+            header.classList.remove('header-active');
+            links.classList.remove('links-active');
+        }
+    };
+</script>
